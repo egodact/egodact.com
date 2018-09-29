@@ -8,7 +8,8 @@ const Container = styled('div')({
   maxWidth: 'calc(100% - 48px)'
 }, ({ flex }) => {
   if (flex) return {
-    display: 'flex'
+    display: 'flex',
+    flexWrap: 'wrap'
   };
 });
 

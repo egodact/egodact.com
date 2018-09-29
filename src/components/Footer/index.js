@@ -7,7 +7,8 @@ import Link from 'react-router-dom/Link';
 const StyledFooter = styled('footer')({
   paddingTop: 24,
   paddingBottom: 24,
-  backgroundColor: '#F5F5F5'
+  backgroundColor: '#F5F5F5',
+  borderTop: '1px solid #E0E0E0'
 });
 
 const PageLink = styled(Link)({

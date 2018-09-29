@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'react-emotion';
+import { mediaQuery } from '../../styles';
 
 const StyledCol = styled('div')({
   paddingLeft: 12,
@@ -12,6 +13,15 @@ const StyledCol = styled('div')({
   },
   ':last-child': {
     paddingRight: 0
+  },
+  [mediaQuery(768)]: {
+    paddingLeft: 0,
+    paddingRight: 0,
+    paddingBottom: 24,
+    minWidth: '100%',
+    ':last-child': {
+      paddingBottom: 0
+    }
   }
 });
 

@@ -10,21 +10,7 @@ const Home = () => (
     </Helmet>
     <Container>
       <h1>Egodact ontwikkelt innovatieve onderwijssoftware.</h1>
-      <p>De Egodact website komt er spoedig aan.</p>
-      <ul>
-        <li>
-          <Link to="./terms">Voorwaarden</Link>
-        </li>
-        <li>
-          <Link to="./privacy">Privacy</Link>
-        </li>
-        <li>
-          <Link to="./bugs">Bugs melden</Link>
-        </li>
-        <li>
-          <Link to="./open-source">Open Source</Link>
-        </li>
-      </ul>
+      <p>Niet homepages. De Egodact website zal dus nog heel even moeten wachten.</p>
     </Container>
   </Fragment>
 );
