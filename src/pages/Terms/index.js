@@ -1,11 +1,11 @@
-<!DOCTYPE html>
-<html lang="nl">
-  <head>
-    <title>Voorwaarden | Egodact</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  </head>
-  <body style="font-family: -apple-system, Roboto, Arial">
+import React, { Fragment } from 'react';
+import { Helmet } from 'react-helmet';
+
+const Terms = () => (
+  <Fragment>
+    <Helmet>
+      <title>Voorwaarden</title>
+    </Helmet>
     <h1>Voorwaarden</h1>
     <h4>Agora ChallengeMonitor</h4>
     <ul>
@@ -33,23 +33,7 @@
         </a>
       </li>
     </ul>
-    <h2>Contact opnemen?</h2>
-    <p>
-      Egodact vof,
-      <br>
-      Pierre Cuypersstraat 34, 6041XH Roermond
-      <br>
-      <em>(Adres is geen bezoekadres. Afspraak op locatie maken kan via onderstaande e-mailadres)</em>
-      <br>
-      <a href="mailto:contact@egodact.com">contact@egodact.com</a>
-      <br>
-      +31 6 27341748
-      <br>
-      <br>
-      KvK: 72607467
-      <br>
-      <br>
-      BTW-nummer: 859171838B01
-    </p>
-  </body>
-</html>
+  </Fragment>
+);
+
+export default Terms;

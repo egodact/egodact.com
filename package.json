@@ -1,0 +1,31 @@
+{
+  "name": "egodact.com",
+  "version": "1.0.0",
+  "description": "Egodact homepage",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/egodact/egodact.com.git"
+  },
+  "keywords": [
+    "homepage",
+    "egodact"
+  ],
+  "author": "Rafael Klaessen <rafaelklaessen.nl@gmail.com> (https://rafaelklaessen.nl)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/egodact/egodact.com/issues"
+  },
+  "homepage": "https://github.com/egodact/egodact.com#readme",
+  "dependencies": {
+    "emotion": "^9.2.10",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "react-helmet": "^5.2.0",
+    "react-router-dom": "^4.3.1"
+  }
+}
