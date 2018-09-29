@@ -1,4 +1,29 @@
 body {
   margin: 0;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.4;
+}
+
+a {
+  color: #0017C6;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a:hover {
+  opacity: .5;
+}
+
+h1, h2, h3, h4 {
+  margin-top: 0;
+}
+
+h1 {
+  margin-bottom: 24px;
+  font-size: 32px;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 12px;
 }

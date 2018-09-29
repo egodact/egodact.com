@@ -1,9 +1,10 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import { Helmet } from 'react-helmet';
+import PushToTop from '../../components/PushToTop';
 import Container from '../../components/Container';
 
 const Privacy = () => (
-  <Fragment>
+  <PushToTop>
     <Helmet>
       <title>Privacy</title>
     </Helmet>
@@ -46,7 +47,7 @@ const Privacy = () => (
         </li>
       </ul>
     </Container>
-  </Fragment>
+  </PushToTop>
 );
 
 export default Privacy;

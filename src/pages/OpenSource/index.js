@@ -1,9 +1,10 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import { Helmet } from 'react-helmet';
+import PushToTop from '../../components/PushToTop';
 import Container from '../../components/Container';
 
 const OpenSource = () => (
-  <Fragment>
+  <PushToTop>
     <Helmet>
       <title>Open Source</title>
     </Helmet>
@@ -20,7 +21,7 @@ const OpenSource = () => (
         Egodact heeft zelf ook enkele open source projecten gepubliceerd. Deze projecten zijn te vinden op <a href="https://github.com/egodact" target="_blank">GitHub</a>.
       </p>
     </Container>
-  </Fragment>
+  </PushToTop>
 );
 
 export default OpenSource;

@@ -1,16 +1,17 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import { Helmet } from 'react-helmet';
+import PushToTop from '../../components/PushToTop';
 import Container from '../../components/Container';
 
 const Contact = () => (
-  <Fragment>
+  <PushToTop>
     <Helmet>
       <title>Contact</title>
     </Helmet>
     <Container>
       Zie footer.
     </Container>
-  </Fragment>
+  </PushToTop>
 );
 
 export default Contact;

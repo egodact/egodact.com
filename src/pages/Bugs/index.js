@@ -1,9 +1,10 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import { Helmet } from 'react-helmet';
+import PushToTop from '../../components/PushToTop';
 import Container from '../../components/Container';
 
 const Bugs = () => (
-  <Fragment>
+  <PushToTop>
     <Helmet>
       <title>Bugs</title>
     </Helmet>
@@ -19,7 +20,7 @@ const Bugs = () => (
         <a href="https://github.com/egodact/egodact-issues" target="_blank">maak een issue aan op GitHub</a>
       </p>
     </Container>
-  </Fragment>
+  </PushToTop>
 );
 
 export default Bugs;

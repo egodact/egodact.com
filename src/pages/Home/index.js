@@ -9,8 +9,8 @@ const Home = () => (
       <title>Home</title>
     </Helmet>
     <Container>
-      <h1>Egodact</h1>
-      <p>De Egodact website komt er spoedig aan. Hieronder nuttige links:</p>
+      <h1>Egodact ontwikkelt innovatieve onderwijssoftware.</h1>
+      <p>De Egodact website komt er spoedig aan.</p>
       <ul>
         <li>
           <Link to="./terms">Voorwaarden</Link>

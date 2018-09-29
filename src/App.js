@@ -7,6 +7,7 @@ import {
   Route,
   Redirect
 } from 'react-router-dom';
+import styled from 'react-emotion';
 import Home from './pages/Home';
 import Bugs from './pages/Bugs';
 import Contact from './pages/Contact';
@@ -16,9 +17,16 @@ import Terms from './pages/Terms';
 import NotFound from './pages/NotFound';
 import Footer from './components/Footer';
 
+const SpaceFix = styled('div')({
+  minHeight: '100vh',
+  display: 'flex',
+  flexDirection: 'column',
+  justifyContent: 'space-between'
+});
+
 const App = () => (
   <Router>
-    <div>
+    <SpaceFix>
       <Helmet titleTemplate="%s | Egodact" />
       <Header />
       <Switch>
@@ -34,7 +42,7 @@ const App = () => (
         <Route component={NotFound} />
       </Switch>
       <Footer />
-    </div>
+    </SpaceFix>
   </Router>
 );
 

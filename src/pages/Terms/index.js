@@ -1,9 +1,10 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import { Helmet } from 'react-helmet';
+import PushToTop from '../../components/PushToTop';
 import Container from '../../components/Container';
 
 const Terms = () => (
-  <Fragment>
+  <PushToTop>
     <Helmet>
       <title>Voorwaarden</title>
     </Helmet>
@@ -36,7 +37,7 @@ const Terms = () => (
         </li>
       </ul>
     </Container>
-  </Fragment>
+  </PushToTop>
 );
 
 export default Terms;
