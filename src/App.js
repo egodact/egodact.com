@@ -1,5 +1,6 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import { Helmet } from 'react-helmet';
+import Header from './components/Header';
 import {
   BrowserRouter as Router,
   Switch,
@@ -16,9 +17,10 @@ import NotFound from './pages/NotFound';
 import Footer from './components/Footer';
 
 const App = () => (
-  <Fragment>
-    <Helmet titleTemplate="%s | Egodact" />
-    <Router>
+  <Router>
+    <div>
+      <Helmet titleTemplate="%s | Egodact" />
+      <Header />
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/bugs" component={Bugs} />
@@ -31,9 +33,9 @@ const App = () => (
         )} />
         <Route component={NotFound} />
       </Switch>
-    </Router>
-    <Footer />
-  </Fragment>
+      <Footer />
+    </div>
+  </Router>
 );
 
 export default App;
