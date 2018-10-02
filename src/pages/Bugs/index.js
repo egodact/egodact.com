@@ -16,8 +16,7 @@ const Bugs = () => (
         <a href="mailto:bugs@egodact.com">Stuur een e-mail</a>
         <br />
         <br />
-        Ook kun je een issue aanmaken op GitHub:
-        <a href="https://github.com/egodact/egodact-issues" target="_blank">maak een issue aan op GitHub</a>
+        Ook kun je een issue aanmaken op GitHub: <a href="https://github.com/egodact/egodact-issues" target="_blank">maak een issue aan op GitHub</a>
       </p>
     </Container>
   </PushToTop>

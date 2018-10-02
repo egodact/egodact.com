@@ -12,6 +12,7 @@ export const buttonStyles = {
   appearance: 'none',
   borderRadius: 6,
   boxSizing: 'border-box',
+  display: 'inline-block',
   ':hover': {
     backgroundColor: blueHover
   }

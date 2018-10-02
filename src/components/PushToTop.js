@@ -2,6 +2,7 @@ import styled from 'react-emotion';
 
 const PushToTop = styled('main')({
   paddingTop: 36,
+  paddingBottom: 36,
   flex: 1
 });
 

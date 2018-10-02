@@ -19,9 +19,7 @@ const PageLink = styled(Link)({
 const Footer = () => (
   <StyledFooter>
     <Container flex>
-      <Col>
-        &copy; {new Date().getFullYear()} Egodact VOF
-        <br />
+      <Col title={<span>&copy; {new Date().getFullYear()} Egodact</span>}>
         Broncode is te vinden op <a href="https://github.com/egodact/egodact.com" target="_blank">GitHub</a>
       </Col>
       <Col title="Pagina's">

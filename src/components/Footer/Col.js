@@ -27,7 +27,8 @@ const StyledCol = styled('div')({
 
 const ColTitle = styled('h4')({
   marginTop: 0,
-  marginBottom: 4
+  marginBottom: 4,
+  fontWeight: 600
 });
 
 const Col = ({ title, children, ...props }) => (
