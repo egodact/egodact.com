@@ -13,6 +13,11 @@ const Terms = () => (
       <h4>Agora ChallengeMonitor</h4>
       <ul>
         <li>
+          <a href="/_terms/docs/sla-agora-challengemonitor.pdf" target="_blank">
+            Service level agreement Agora ChallengeMonitor
+          </a>
+        </li>
+        <li>
           <a href="/_terms/docs/algemene-voorwaarden-agora-challengemonitor.pdf" target="_blank">
             Algemene voorwaarden Agora ChallengeMonitor
           </a>
@@ -26,7 +31,12 @@ const Terms = () => (
       <h4>Agora VoortgangsMonitor</h4>
       <ul>
         <li>
-          <a href="/_terms/docs/algemene-voorwaarden-agora-challengemonitor.pdf" target="_blank">
+          <a href="/_terms/docs/sla-agora-voortgangsmonitor.pdf" target="_blank">
+            Service level agreement Agora VoortgangsMonitor
+          </a>
+        </li>
+        <li>
+          <a href="/_terms/docs/algemene-voorwaarden-agora-voortgangsmonitor.pdf" target="_blank">
             Algemene voorwaarden Agora VoortgangsMonitor
           </a>
         </li>

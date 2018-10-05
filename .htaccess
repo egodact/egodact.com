@@ -2,5 +2,5 @@
     RewriteEngine On
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteCond %{REQUEST_FILENAME} !-d
-    RewriteRule (^((?!(\.zip|\.pdf|google7febfad74061be7d\.html)).)*$) index.html [QSA,L]
+    RewriteRule (^((?!(\.zip|\.pdf|google7febfad74061be7d\.html)|\.js|\.css).)*$) index.html [QSA,L]
 </ifModule>
