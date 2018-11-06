@@ -46,6 +46,10 @@ const Privacy = () => (
           </a>
         </li>
       </ul>
+      <br />
+      <p>
+        Egodact is aangemeld bij het <a href="https://www.privacyconvenant.nl" target="_blank">Privacy Convenant</a>.
+      </p>
     </Container>
   </PushToTop>
 );
