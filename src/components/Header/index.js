@@ -1,7 +1,8 @@
 import React from 'react';
 import styled from 'react-emotion';
-import Container from './Container';
+import Container from '../Container';
 import Link from 'react-router-dom/Link';
+import logo from './logo.svg';
 
 const StyledHeader = styled('header')({
   paddingTop: 18,
@@ -9,22 +10,22 @@ const StyledHeader = styled('header')({
   borderBottom: '2px solid #F5F5F5'
 });
 
-const SiteTitle = styled('h3')({
-  margin: 0
+const SiteLink = styled(Link)({
+  fontWeight: 700,
+  lineHeight: 0,
+  display: 'inline-block'
 });
 
-const SiteLink = styled(Link)({
-  fontWeight: 700
+const Logo = styled('img')({
+  height: 45
 });
 
 const Header = () => (
   <StyledHeader>
-    <Container>
-      <SiteTitle>
-        <SiteLink to="/">
-          Egodact
-        </SiteLink>
-      </SiteTitle>
+    <Container style={{ lineHeight: 0 }}>
+      <SiteLink to="/">
+        <Logo src={logo} alt="Logo" />
+      </SiteLink>
     </Container>
   </StyledHeader>
 );
