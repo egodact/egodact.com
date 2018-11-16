@@ -9,6 +9,7 @@ import {
 } from 'react-router-dom';
 import styled from 'react-emotion';
 import Home from './pages/Home';
+import About from './pages/About';
 import Bugs from './pages/Bugs';
 import Contact from './pages/Contact';
 import OpenSource from './pages/OpenSource';
@@ -31,6 +32,7 @@ const App = () => (
       <Header />
       <Switch>
         <Route exact path="/" component={Home} />
+        <Route exact path="/about" component={About} />
         <Route exact path="/bugs" component={Bugs} />
         <Route exact path="/contact" component={Contact} />
         <Route exact path="/open-source" component={OpenSource} />

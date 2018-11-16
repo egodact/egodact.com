@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/egodact/egodact.com#readme",
   "dependencies": {
+    "components": "^0.1.0",
     "emotion": "^9.2.10",
     "prop-types": "^15.6.2",
     "react": "^16.5.2",

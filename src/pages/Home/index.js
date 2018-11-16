@@ -1,24 +1,28 @@
 import React, { Fragment } from 'react';
 import { Helmet } from 'react-helmet';
-import Link from 'react-router-dom/Link';
+import styled from 'react-emotion';
 import Container from '../../components/Container';
+import PushToTop from '../../components/PushToTop';
+import { grey } from '../../colors';
 
-const marginFix = {
-  marginBottom: 0
-};
+const InfoText = styled('p')({
+  marginBottom: 0,
+  maxWidth: 600,
+  color: grey
+});
 
 const Home = () => (
-  <Fragment>
+  <PushToTop>
     <Helmet>
       <title>Home</title>
     </Helmet>
-    <Container withPadding>
+    <Container>
       <h1>Egodact ontwikkelt innovatieve onderwijssoftware.</h1>
-      <p style={marginFix}>
-        Niet homepages. De Egodact website zal dus nog heel even moeten wachten.
-      </p>
+      <InfoText>
+        Egodact ontwikkelt software die aansluit bij het opkomende changemakers-onderwijs, in samenwerking met Agora Roermond.
+      </InfoText>
     </Container>
-  </Fragment>
+  </PushToTop>
 );
 
 export default Home;
