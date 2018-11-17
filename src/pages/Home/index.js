@@ -1,15 +1,11 @@
 import React, { Fragment } from 'react';
 import { Helmet } from 'react-helmet';
-import styled from 'react-emotion';
-import Container from '../../components/Container';
 import PushToTop from '../../components/PushToTop';
-import { grey } from '../../colors';
-
-const InfoText = styled('p')({
-  marginBottom: 0,
-  maxWidth: 600,
-  color: grey
-});
+import Container from '../../components/Container';
+import HeroWrapper from './components/HeroWrapper';
+import StyledLogo from './components/StyledLogo';
+import InfoText from './components/InfoText';
+import logoSquare from './logo-square.svg';
 
 const Home = () => (
   <PushToTop>
@@ -17,10 +13,15 @@ const Home = () => (
       <title>Home</title>
     </Helmet>
     <Container>
-      <h1>Egodact ontwikkelt innovatieve onderwijssoftware.</h1>
-      <InfoText>
-        Egodact ontwikkelt software die aansluit bij het opkomende changemakers-onderwijs, in samenwerking met Agora Roermond.
-      </InfoText>
+      <HeroWrapper>
+        <StyledLogo src={logoSquare} alt="Logo" />
+        <div>
+          <h1>Egodact ontwikkelt innovatieve onderwijssoftware.</h1>
+          <InfoText>
+            Egodact ontwikkelt software die aansluit bij het opkomende changemakers-onderwijs, in samenwerking met Agora Roermond.
+          </InfoText>
+        </div>
+      </HeroWrapper>
     </Container>
   </PushToTop>
 );
