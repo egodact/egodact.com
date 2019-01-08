@@ -31,7 +31,7 @@ const Privacy = () => (
       <h4>Agora VoortgangsMonitor</h4>
       <ul>
         <li>
-          <a href="/_privacy/docs/privacyverklaring-agora-challengemonitor.pdf" target="_blank">
+          <a href="/_privacy/docs/privacyverklaring-agora-voortgangsmonitor.pdf" target="_blank">
             Privacyverklaring Agora VoortgangsMonitor
           </a>
         </li>
