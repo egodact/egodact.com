@@ -3,10 +3,11 @@ import styled from 'react-emotion';
 import Container from '../Container';
 import Link from 'react-router-dom/Link';
 import logo from './logo.svg';
+import Navigation from './Navigation';
 
 const StyledHeader = styled('header')({
-  paddingTop: 18,
-  paddingBottom: 18,
+  paddingTop: 8,
+  paddingBottom: 8,
   borderBottom: '2px solid #F5F5F5'
 });
 
@@ -20,12 +21,18 @@ const Logo = styled('img')({
   height: 45
 });
 
+const containerStyle = {
+  alignItems: 'center',
+  lineHeight: 0
+};
+
 const Header = () => (
   <StyledHeader>
-    <Container style={{ lineHeight: 0 }}>
+    <Container style={containerStyle} flex>
       <SiteLink to="/">
         <Logo src={logo} alt="Logo" />
       </SiteLink>
+      <Navigation />
     </Container>
   </StyledHeader>
 );
