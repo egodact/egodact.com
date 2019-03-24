@@ -13,9 +13,9 @@ const OpenSource = () => (
       <p>
         De Agora VoortgangsMonitor en de Agora ChallengeMonitor maken veel gebruik van open source projecten. De licenties van deze projecten zijn te vinden in de volgende zip bestanden:
         <br />
-        <a href="/_open-source/licenses/challengemonitor-licenses.zip">ChallengeMonitor licenties</a>
+        <a href="/_open-source/licences/challengemonitor-licences.zip">Agora ChallengeMonitor licenties</a>
         <br />
-        <a href="/_open-source/licenses/progressmonitor-licenses.zip">VoortgangsMonitor licenties</a>
+        <a href="/_open-source/licences/progressmonitor-licences.zip">Agora VoortgangsMonitor licenties</a>
         <br />
         <br />
         Egodact heeft zelf ook enkele open source projecten gepubliceerd. Deze projecten zijn te vinden op <a href="https://github.com/egodact" target="_blank">GitHub</a>.
