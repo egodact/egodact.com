@@ -5,8 +5,8 @@ import SectionText from './SectionText';
 import SectionHalf from './SectionHalf';
 
 const Section = styled('section')({
-  paddingTop: 36,
-  paddingBottom: 36
+  paddingTop: 84,
+  paddingBottom: 84
 }, ({ color, backgroundColor, split }) => {
   const styles = [];
 

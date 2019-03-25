@@ -2,17 +2,16 @@ import PropTypes from 'prop-types';
 import styled from 'react-emotion';
 
 const SectionTitle = styled('h1')({
-  textAlign: 'center',
-  fontSize: 36,
+  fontSize: 28,
+  fontWeight: 600,
   ':last-child': {
     marginBottom: 0
   }
 }, ({ inHalf }) => {
   if (inHalf) {
     return {
-      marginBottom: 18,
       textAlign: 'left',
-      fontSize: 32
+      fontSize: 24
     };
   }
 });

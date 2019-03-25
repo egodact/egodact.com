@@ -7,7 +7,7 @@ const StyledNavigation = styled('nav')({
 });
 
 const StyledLink = styled(Link)({
-  marginRight: 12,
+  marginRight: 24,
   ':last-child': {
     marginRight: 0
   }

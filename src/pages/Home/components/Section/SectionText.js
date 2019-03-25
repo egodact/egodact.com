@@ -3,10 +3,6 @@ import styled from 'react-emotion';
 import { grey } from '../../../../colors';
 
 const SectionText = styled('p')({
-  marginLeft: 'auto',
-  marginRight: 'auto',
-  maxWidth: 600,
-  textAlign: 'center',
   opacity: .7
 }, ({ inHalf }) => {
   if (inHalf) {
