@@ -10,7 +10,6 @@ const SectionTitle = styled('h1')({
 }, ({ inHalf }) => {
   if (inHalf) {
     return {
-      textAlign: 'left',
       fontSize: 24
     };
   }

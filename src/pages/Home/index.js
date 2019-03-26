@@ -10,6 +10,7 @@ import PlatformImage from './components/PlatformImage';
 import PlatformLink from './components/PlatformLink';
 import placeholderImage from './software_placeholder_image.png';
 import SurTitle from './components/SurTitle';
+import PostsSection from './components/PostsSection';
 
 const Home = () => (
   <PushToTop>
@@ -43,10 +44,10 @@ const Home = () => (
       </Section.Half>
       <Section.Half>
         <Section.Half.ContentWrapper>
-          <Section.Title inHalf>
+          <Section.Title>
             Agora ChallengeMonitor
           </Section.Title>
-          <Section.Text inHalf>
+          <Section.Text>
             In Agora ChallengeMonitor houden leerlingen een portfolio van hun projecten ("challenges" in Agora-termen) bij via een Kanban bord. Via het challenge-model—dat overigens door de school volledig aangepast kan worden—doorlopen leerlingen een vast proces waardoor zij altijd zelf aan de slag kunnen.
             <PlatformLink to="/challengemonitor">
               Meer informatie over Agora ChallengeMonitor
@@ -58,10 +59,10 @@ const Home = () => (
     <Section split>
       <Section.Half>
         <Section.Half.ContentWrapper>
-          <Section.Title inHalf>
+          <Section.Title>
             Agora VoortgangsMonitor
           </Section.Title>
-          <Section.Text inHalf>
+          <Section.Text>
             Agora VoortgangsMonitor geeft leerlingen een overzicht van rubrics—wederom ingesteld door de school—waarin zij zelfstandig en proactief hun voortgang bij kunnen houden. De leraar of mentor, ofwel de coach in Agora terminologie, bevestigt of weerlegt enkel deze voortgang.
             <PlatformLink to="/progressmonitor">
               Meer informatie over Agora VoortgangsMonitor
@@ -86,7 +87,17 @@ const Home = () => (
           <br />
           <br />
           Betekent dat dan dat de software alleen werkt voor Agora scholen? Nee, helemaal niet; de opmaak is in hoge mate aanpasbaar en flexibel. Maar we nemen wél de Agora visie mee.
-
+        </Section.Text>
+      </Container>
+    </Section>
+    <PostsSection />
+    <Section>
+      <Container>
+        <Section.Title>
+          Contact opnemen?
+        </Section.Title>
+        <Section.Text>
+          Heeft onze software je interesse gewekt?
         </Section.Text>
       </Container>
     </Section>
