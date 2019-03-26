@@ -4,7 +4,7 @@ import styled from 'react-emotion';
 const Container = styled('div')({
   marginLeft: 'auto',
   marginRight: 'auto',
-  width: 824,
+  width: 836,
   maxWidth: 'calc(100% - 48px)'
 }, ({ flex, withPadding }) => {
   const styles = [];

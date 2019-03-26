@@ -1,8 +1,8 @@
 import styled from 'react-emotion';
 
 const SectionHalfContentWrapper = styled('div')({
-  paddingTop: 56,
-  paddingBottom: 56,
+  paddingTop: 72,
+  paddingBottom: 72,
   marginLeft: 'auto',
   marginRight: 'auto',
   width: 512,
