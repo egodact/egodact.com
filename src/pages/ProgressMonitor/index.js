@@ -23,14 +23,14 @@ const ProgressMonitor = () => (
       <p>
         In de praktijk betekent dat dat leerlingen, bijvoorbeeld, het volgende zien wanneer zij inloggen—via hun Google of Microsoft account—in ons programma:
       </p>
-      <Image src={portfolioScreenshot} alt="Portfolio screenshot" />
+      <Image src={portfolioScreenshot} alt="Screenshot van een portfolio" />
       <p>
         Wat je hier ziet is, zoals beloofd, een overzicht van rubrics, gestructureerd door middel van onderwerpen, subonderwerpen en onderdelen. De rubrics die je ziet, zijn trouwens geen onderdeel van het programma: deze zijn 'toevallig' zo ingesteld door <a href="http://niekee.nl/agora-vmbo-havo-vwo">Agora Roermond</a>. Als school heb je volledige controle over alle rubrics.
       </p>
       <p>
         Welnu, aan enkel een overzicht hebben we natuurlijk weinig. Daarom hebben we die sliders: zij representeren met hun kleuren de voortgang van de leerling binnen de niveaus van de rubric. Deze niveaus kunnen bekeken worden door simpelweg op een onderdeel te klikken. Je krijgt dan, bijvoorbeeld, het volgende te zien:
       </p>
-      <Image src={rubricLevels} alt="Rubric niveaus" />
+      <Image src={rubricLevels} alt="Niveaus binnen een rubric" />
       <p>
         Met de slider die onder de niveaus staat, kan de leerling—helemaal zelfstandig, want leerlingen zijn de eigenaar van hun eigen ontwikkeling—zijn voortgang aangeven. De plus-knopjes kunnen gebruikt worden om een link (naar bijvoorbeeld een challenge uit de <Link to="./challengemonitor">Agora ChallengeMonitor</Link>) te koppelen aan dat niveau, om zo te bewijzen dat dat niveau ook daadwerkelijk behaald is. De niveaus die hier zichtbaar zijn zijn overigens wederom eigendom van <a href="http://niekee.nl/agora-vmbo-havo-vwo">Agora Roermond</a>.
       </p>
@@ -40,7 +40,7 @@ const ProgressMonitor = () => (
       <p>
         Het laatste dat we hier nog willen benoemen is de geschiedenis-knop. Als een leerling—of coach—hierop klikt, verschijnt een balk die gebruikt kan worden om het portfolio—ofwel het gehele overzicht van rubrics met ingevulde sliders—van een moment in het verleden terug te halen:
       </p>
-      <Image src={historyBar} alt="Geschiedenis-balk" />
+      <Image src={historyBar} alt="De geschiedenis-balk" />
       <p>
          Deze 'snapshots' van het portfolio worden wekelijks gemaakt.
       </p>
@@ -68,7 +68,7 @@ const ProgressMonitor = () => (
         Het zou ronduit belachelijk zijn om te beweren dat enkel een instantie van Agora VoortgangsMonitor, gekoppeld aan een sterke set rubrics, genoeg is om leerlingen te motiveren en te laten groeien. Daar is namelijk nog een extra ingrediënt voor nodig: goede coaching.
       </p>
       <p>
-        Een coach—mentor of leraar in de termen van een traditionele school—zorgt ervoor dat een leerling daadwerkelijk aan de slag gaat met rubrics; dat de intrinsieke motivatie er ook echt komt. Dat betekent niet dat een coach een leerling gaat dwingen—dat zou namelijk direct tegenstrijdig zijn met al het bovenstaande—maar wel dat intrinsieke motivatie en eigenaarschap veelal veelal enige stimulatie vragen, vooral in het begin. Bijvoorbeeld door sterke vraagstelling en door bewustmaking—&quot;hoe kunnen deze rubrics jou vooruit helpen?&quot;—maar zodra het vuurtje eenmaal is aangewakkerd, komt de leerling vaak een heel eind.
+        Een coach—mentor of leraar in de termen van een traditionele school—zorgt ervoor dat een leerling daadwerkelijk aan de slag gaat met rubrics; dat de intrinsieke motivatie er ook echt komt. Dat betekent niet dat een coach een leerling gaat dwingen—dat zou namelijk direct tegenstrijdig zijn met al het bovenstaande—maar wel dat intrinsieke motivatie en eigenaarschap over groei veelal enige stimulatie vragen, vooral in het begin. Bijvoorbeeld door sterke vraagstelling en door bewustmaking—&quot;hoe kunnen deze rubrics jou vooruit helpen?&quot;. En zodra het vuurtje eenmaal is aangewakkerd, komt de leerling vaak een heel eind.
       </p>
       <h3>Meer weten?</h3>
       <p>
