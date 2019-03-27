@@ -1,13 +1,13 @@
 import React from 'react';
 import styled from 'react-emotion';
-import Link from 'react-router-dom/Link';
+import { Link } from 'react-router-dom';
 
 const StyledNavigation = styled('nav')({
   marginLeft: 'auto'
 });
 
 const StyledLink = styled(Link)({
-  marginRight: 24,
+  marginRight: 36,
   ':last-child': {
     marginRight: 0
   }

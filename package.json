@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "parcel index.html",
-    "build": "rm -rf dist && mkdir dist && cp google7febfad74061be7d.html dist/google7febfad74061be7d.html && cp .htaccess dist/.htaccess && cp sitemap.xml dist/sitemap.xml && cp -R _terms dist/_terms && cp -R _privacy dist/_privacy && cp -R _open-source dist/_open-source && parcel build index.html",
+    "build": "rm -rf dist && mkdir dist && cp netlify.toml dist/netlify.toml && cp google7febfad74061be7d.html dist/google7febfad74061be7d.html && cp .htaccess dist/.htaccess && cp sitemap.xml dist/sitemap.xml && cp -R _terms dist/_terms && cp -R _privacy dist/_privacy && cp -R _open-source dist/_open-source && parcel build index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -27,11 +27,12 @@
     "components": "^0.1.0",
     "emotion": "^9.2.10",
     "prop-types": "^15.6.2",
-    "react": "^16.5.2",
-    "react-dom": "^16.5.2",
+    "react": "^16.8.5",
+    "react-dom": "^16.8.5",
     "react-emotion": "^9.2.10",
     "react-helmet": "^5.2.0",
-    "react-router-dom": "^4.3.1"
+    "react-router-dom": "^5.0.0",
+    "use-react-router": "^1.0.5"
   },
   "devDependencies": {
     "babel-plugin-transform-class-properties": "^6.24.1",

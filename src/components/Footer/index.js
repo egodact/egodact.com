@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 import Container from '../Container';
 import styled from 'react-emotion';
 import Col from './Col';
-import Link from 'react-router-dom/Link';
+import { Link } from 'react-router-dom';
 
 const StyledFooter = styled('footer')({
   paddingTop: 24,

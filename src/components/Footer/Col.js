@@ -4,8 +4,8 @@ import styled from 'react-emotion';
 import { mediaQuery } from '../../styles';
 
 const StyledCol = styled('div')({
-  paddingLeft: 12,
-  paddingRight: 12,
+  paddingLeft: 24,
+  paddingRight: 24,
   flex: 1,
   boxSizing: 'border-box',
   ':first-child': {

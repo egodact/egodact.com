@@ -1,5 +1,5 @@
 import styled from 'react-emotion';
-import Link from 'react-router-dom/Link';
+import { Link } from 'react-router-dom';
 
 const PlatformLink = styled(Link)({
   marginTop: 24,

@@ -1,13 +1,14 @@
 import React from 'react';
 import styled from 'react-emotion';
 import Container from '../Container';
-import Link from 'react-router-dom/Link';
+import { Link } from 'react-router-dom';
 import logo from './logo.svg';
 import Navigation from './Navigation';
+import useReactRouter from 'use-react-router';
 
 const StyledHeader = styled('header')({
-  paddingTop: 8,
-  paddingBottom: 8,
+  paddingTop: 12,
+  paddingBottom: 12,
   borderBottom: '2px solid #F5F5F5'
 });
 
@@ -28,7 +29,8 @@ const containerStyle = isHomePage => ({
 });
 
 const Header = () => {
-  const isHomePage = window.location.pathname === '/';
+  const { location } = useReactRouter();
+  const isHomePage = location.pathname === '/';
 
   return (
     <StyledHeader>

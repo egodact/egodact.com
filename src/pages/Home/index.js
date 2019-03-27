@@ -8,9 +8,11 @@ import HeroOverlay from './components/HeroSection/HeroOverlay';
 import HeroTitle from './components/HeroSection/HeroTitle';
 import PlatformImage from './components/PlatformImage';
 import PlatformLink from './components/PlatformLink';
-import placeholderImage from './software_placeholder_image.png';
+import challengeMonitorPlatformImage from './components/platformImages/challengemonitor.png';
+import progressMonitorPlatformImage from './components/platformImages/progressmonitor.png';
 import SurTitle from './components/SurTitle';
 import PostsSection from './components/PostsSection';
+import LinkButton from '../../components/LinkButton';
 
 const Home = () => (
   <PushToTop>
@@ -40,23 +42,8 @@ const Home = () => (
     </Section>
     <Section split>
       <Section.Half>
-        <PlatformImage src={placeholderImage} />
+        <PlatformImage src={progressMonitorPlatformImage} />
       </Section.Half>
-      <Section.Half>
-        <Section.Half.ContentWrapper>
-          <Section.Title>
-            Agora ChallengeMonitor
-          </Section.Title>
-          <Section.Text>
-            In Agora ChallengeMonitor houden leerlingen een portfolio van hun projecten ("challenges" in Agora-termen) bij via een Kanban bord. Via het challenge-model—dat overigens door de school volledig aangepast kan worden—doorlopen leerlingen een vast proces waardoor zij altijd zelf aan de slag kunnen.
-            <PlatformLink to="/challengemonitor">
-              Meer informatie over Agora ChallengeMonitor
-            </PlatformLink>
-          </Section.Text>
-        </Section.Half.ContentWrapper>
-      </Section.Half>
-    </Section>
-    <Section split>
       <Section.Half>
         <Section.Half.ContentWrapper>
           <Section.Title>
@@ -70,8 +57,23 @@ const Home = () => (
           </Section.Text>
         </Section.Half.ContentWrapper>
       </Section.Half>
+    </Section>
+    <Section split>
       <Section.Half>
-        <PlatformImage src={placeholderImage} />
+        <Section.Half.ContentWrapper>
+          <Section.Title>
+            Agora ChallengeMonitor
+          </Section.Title>
+          <Section.Text>
+            In Agora ChallengeMonitor houden leerlingen een portfolio van hun projecten ("challenges" in Agora-termen) bij via een Kanban bord. Via het challenge-model—dat overigens door de school volledig aangepast kan worden—doorlopen leerlingen een vast proces waardoor zij altijd zelf aan de slag kunnen.
+            <PlatformLink to="/challengemonitor">
+              Meer informatie over Agora ChallengeMonitor
+            </PlatformLink>
+          </Section.Text>
+        </Section.Half.ContentWrapper>
+      </Section.Half>
+      <Section.Half>
+        <PlatformImage src={challengeMonitorPlatformImage} />
       </Section.Half>
     </Section>
     <Section>
@@ -91,14 +93,17 @@ const Home = () => (
       </Container>
     </Section>
     <PostsSection />
-    <Section>
+    <Section style={{ marginBottom: -36 }}>
       <Container>
         <Section.Title>
           Contact opnemen?
         </Section.Title>
-        <Section.Text>
-          Heeft onze software je interesse gewekt?
+        <Section.Text style={{ marginBottom: 18 }}>
+          Dat kan. Graag zelfs! Je kunt ons bereiken via de contact pagina.
         </Section.Text>
+        <LinkButton to="/contact">
+          Neem contact op
+        </LinkButton>
       </Container>
     </Section>
   </PushToTop>
