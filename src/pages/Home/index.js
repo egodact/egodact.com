@@ -51,7 +51,7 @@ const Home = () => (
             Agora VoortgangsMonitor
           </Section.Title>
           <Section.Text>
-            Agora VoortgangsMonitor geeft leerlingen een overzicht van rubrics—wederom ingesteld door de school—waarin zij zelfstandig en proactief hun voortgang bij kunnen houden. De leraar of mentor, ofwel de coach in Agora terminologie, bevestigt of weerlegt enkel deze voortgang.
+            Agora VoortgangsMonitor geeft leerlingen een overzicht van rubrics—ingesteld door de school—waarin zij zelfstandig en proactief hun voortgang bij kunnen houden. De leraar of mentor, ofwel de coach in Agora terminologie, bevestigt of weerlegt enkel deze voortgang.
             <PlatformLink to="/progressmonitor">
               Meer informatie over Agora VoortgangsMonitor
             </PlatformLink>
@@ -99,7 +99,7 @@ const Home = () => (
         <Section.Title>
           Contact opnemen?
         </Section.Title>
-        <Section.Text style={{ marginBottom: 18 }}>
+        <Section.Text>
           Dat kan. Graag zelfs! Je kunt ons bereiken via de contact pagina.
         </Section.Text>
         <LinkButton to="/contact">

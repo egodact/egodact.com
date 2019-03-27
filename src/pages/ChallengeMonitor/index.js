@@ -9,7 +9,7 @@ const ChallengeMonitor = () => (
       <title>Agora ChallengeMonitor</title>
     </Helmet>
     <Container>
-      <h1>Hello, world</h1>
+      <h1>Agora ChallengeMonitor</h1>
     </Container>
   </PushToTop>
 );

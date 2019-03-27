@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types';
 import styled from 'react-emotion';
 import SectionTitle from './SectionTitle';
-import SectionText from './SectionText';
 import SectionHalf from './SectionHalf';
 import { mediaQuery } from '../../../../styles';
 
@@ -49,7 +48,7 @@ Section.defaultProps = {
 };
 
 Section.Title = SectionTitle;
-Section.Text = SectionText;
+Section.Text = 'p';
 Section.Half = SectionHalf;
 
 export default Section;

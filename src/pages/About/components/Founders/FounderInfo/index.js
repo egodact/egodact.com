@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import InfoWrapper from './InfoWrapper';
 import FounderPicture from './FounderPicture';
 import FounderName from './FounderName';
+import EmailButtonLink from './EmailButtonLink';
 import Button from '../../../../../components/Button';
 
 const FounderInfo = ({ founder }) => (
@@ -14,11 +15,11 @@ const FounderInfo = ({ founder }) => (
     <FounderName>
       {founder.name}
     </FounderName>
-    <a href={`mailto:${founder.email}`}>
+    <EmailButtonLink href={`mailto:${founder.email}`}>
       <Button>
         Stuur {founder.firstName} een e-mail
       </Button>
-    </a>
+    </EmailButtonLink>
   </InfoWrapper>
 );
 
