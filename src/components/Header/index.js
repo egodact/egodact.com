@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import logo from './logo.svg';
 import Navigation from './Navigation';
 import useReactRouter from 'use-react-router';
+import { mediaQuery } from '../../styles';
 
 const StyledHeader = styled('header')({
   paddingTop: 12,
@@ -22,11 +23,15 @@ const Logo = styled('img')({
   height: 45
 });
 
-const containerStyle = isHomePage => ({
-  width: isHomePage ? 'calc(100% - 320px)' : null,
+const StyledContainer = styled(Container)({
   alignItems: 'center',
   lineHeight: 0
-});
+}, ({ isHomePage }) => ({
+  width: isHomePage ? 'calc(100% - 320px)' : null,
+  [mediaQuery(1024)]: {
+    width: isHomePage ? 'calc(100% - 48px)' : null
+  }
+}));
 
 const Header = () => {
   const { location } = useReactRouter();
@@ -34,12 +39,12 @@ const Header = () => {
 
   return (
     <StyledHeader>
-      <Container style={containerStyle(isHomePage)} flex>
+      <StyledContainer isHomePage={isHomePage} flex>
         <SiteLink to="/">
           <Logo src={logo} alt="Logo" />
         </SiteLink>
         <Navigation />
-      </Container>
+      </StyledContainer>
     </StyledHeader>
   );
 };

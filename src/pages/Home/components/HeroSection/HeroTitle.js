@@ -1,5 +1,6 @@
 import styled from 'react-emotion';
 import Section from '../Section';
+import { mediaQuery } from '../../../../styles';
 
 const HeroTitle = styled(Section.Title)({
   position: 'relative',

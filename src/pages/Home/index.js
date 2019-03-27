@@ -13,6 +13,7 @@ import progressMonitorPlatformImage from './components/platformImages/progressmo
 import SurTitle from './components/SurTitle';
 import PostsSection from './components/PostsSection';
 import LinkButton from '../../components/LinkButton';
+import { mediaQuery } from '../../styles';
 
 const Home = () => (
   <PushToTop>
@@ -59,7 +60,7 @@ const Home = () => (
       </Section.Half>
     </Section>
     <Section split>
-      <Section.Half>
+      <Section.Half css={{ [mediaQuery(1024)]: { order: 1 } }}>
         <Section.Half.ContentWrapper>
           <Section.Title>
             Agora ChallengeMonitor
@@ -76,7 +77,7 @@ const Home = () => (
         <PlatformImage src={challengeMonitorPlatformImage} />
       </Section.Half>
     </Section>
-    <Section>
+    <Section css={{ [mediaQuery(1024)]: { backgroundColor: '#F5F5F5' } }}>
       <Container>
         <SurTitle>
           Egodact ontwikkelt innovatieve onderwijssoftware...
