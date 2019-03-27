@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import styled from 'react-emotion';
 import { white, logoBlue } from '../../../../../colors';
-import { transition } from '../../../../../styles';
+import { transition, mediaQuery } from '../../../../../styles';
 
 const StyledPost = styled('article')({
   color: white,
@@ -11,7 +11,10 @@ const StyledPost = styled('article')({
   display: 'flex',
   justifyContent: 'center',
   alignItems: 'center',
-  transition
+  transition,
+  [mediaQuery(1024)]: {
+    border: 0
+  }
 }, ({ backgroundImage, highlighted }) => ({
   padding: highlighted ? 48 : 0,
   width: highlighted ? '40vw' : '30vw',
@@ -25,7 +28,13 @@ const StyledPost = styled('article')({
   `,
   backgroundPosition: 'center',
   backgroundSize: 'cover',
-  backgroundRepeat: 'no-repeat'
+  backgroundRepeat: 'no-repeat',
+  [mediaQuery(1024)]: {
+    padding: highlighted ? 24 : null,
+    paddingTop: highlighted ? 48 : null,
+    width: highlighted ? '100vw' : null,
+    height: highlighted ? 500 : 400
+  }
 }));
 
 StyledPost.propTypes = {

@@ -28,6 +28,9 @@ const StyledContainer = styled(Container)({
   lineHeight: 0
 }, ({ isHomePage }) => ({
   width: isHomePage ? 'calc(100% - 320px)' : null,
+  [mediaQuery(1200)]: {
+    width: isHomePage ? 836 : null
+  },
   [mediaQuery(1024)]: {
     width: isHomePage ? 'calc(100% - 48px)' : null
   }

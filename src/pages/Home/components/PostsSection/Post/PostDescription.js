@@ -1,4 +1,5 @@
 import styled from 'react-emotion';
+import { mediaQuery } from '../../../../../styles';
 
 const PostDescription = styled('p')({
   marginLeft: 'auto',

@@ -13,6 +13,9 @@ const PlatformImage = styled('figure')({
   border: `3px solid ${logoBlue}`,
   boxSizing: 'border-box',
   [mediaQuery(1024)]: {
+    marginLeft: 'auto',
+    marginRight: 'auto',
+    width: 'calc(100% - 48px)',
     height: '50vw'
   }
 }, ({ src }) => ({

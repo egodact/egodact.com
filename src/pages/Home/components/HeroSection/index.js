@@ -17,6 +17,9 @@ const HeroSection = styled(Section)({
   backgroundSize: 'cover',
   backgroundImage: `url(${heroImage})`,
   backgroundRepeat: 'no-repeat',
+  [mediaQuery(1200)]: {
+    width: 836
+  },
   [mediaQuery(1024)]: {
     paddingTop: 56,
     paddingBottom: 56,

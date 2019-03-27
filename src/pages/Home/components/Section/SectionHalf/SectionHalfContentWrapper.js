@@ -11,7 +11,8 @@ const SectionHalfContentWrapper = styled('div')({
   boxSizing: 'border-box',
   [mediaQuery(1024)]: {
     paddingTop: 24,
-    paddingBottom: 24
+    paddingBottom: 24,
+    width: 'calc(100% - 48px)'
   }
 });
 
