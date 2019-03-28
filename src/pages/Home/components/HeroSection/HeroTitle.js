@@ -7,7 +7,10 @@ const HeroTitle = styled(Section.Title)({
   fontSize: 36,
   fontWeight: 400,
   textAlign: 'center',
-  zIndex: 1
+  zIndex: 1,
+  [mediaQuery(1024)]: {
+    fontWeight: 600
+  }
 });
 
 export default HeroTitle;

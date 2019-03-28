@@ -25,14 +25,14 @@ const ProgressMonitor = () => (
       </p>
       <Image src={portfolioScreenshot} alt="Screenshot van een portfolio" />
       <p>
-        Wat je hier ziet is, zoals beloofd, een overzicht van rubrics, gestructureerd door middel van onderwerpen, subonderwerpen en onderdelen. De rubrics die je ziet, zijn trouwens geen onderdeel van het programma: deze zijn 'toevallig' zo ingesteld door <a href="http://niekee.nl/agora-vmbo-havo-vwo">Agora Roermond</a>. Als school heb je volledige controle over alle rubrics.
+        Wat je hier ziet is, zoals beloofd, een overzicht van rubrics, gestructureerd door middel van onderwerpen, subonderwerpen en onderdelen. De rubrics die je ziet, zijn trouwens geen onderdeel van het programma: deze zijn 'toevallig' zo ingesteld door <a href="http://niekee.nl/agora-vmbo-havo-vwo" target="_blank">Agora Roermond</a>. Als school heb je volledige controle over alle rubrics.
       </p>
       <p>
         Welnu, aan enkel een overzicht hebben we natuurlijk weinig. Daarom hebben we die sliders: zij representeren met hun kleuren de voortgang van de leerling binnen de niveaus van de rubric. Deze niveaus kunnen bekeken worden door simpelweg op een onderdeel te klikken. Je krijgt dan, bijvoorbeeld, het volgende te zien:
       </p>
       <Image src={rubricLevels} alt="Niveaus binnen een rubric" />
       <p>
-        Met de slider die onder de niveaus staat, kan de leerling—helemaal zelfstandig, want leerlingen zijn de eigenaar van hun eigen ontwikkeling—zijn voortgang aangeven. De plus-knopjes kunnen gebruikt worden om een link (naar bijvoorbeeld een challenge uit de <Link to="./challengemonitor">Agora ChallengeMonitor</Link>) te koppelen aan dat niveau, om zo te bewijzen dat dat niveau ook daadwerkelijk behaald is. De niveaus die hier zichtbaar zijn zijn overigens wederom eigendom van <a href="http://niekee.nl/agora-vmbo-havo-vwo">Agora Roermond</a>.
+        Met de slider die onder de niveaus staat, kan de leerling—helemaal zelfstandig, want leerlingen zijn de eigenaar van hun eigen ontwikkeling—zijn voortgang aangeven. De plus-knopjes kunnen gebruikt worden om een link (naar bijvoorbeeld een challenge uit de <Link to="./challengemonitor">Agora ChallengeMonitor</Link>) te koppelen aan dat niveau, om zo te bewijzen dat dat niveau ook daadwerkelijk behaald is. De niveaus die hier zichtbaar zijn zijn overigens wederom eigendom van <a href="http://niekee.nl/agora-vmbo-havo-vwo" target="_blank">Agora Roermond</a>.
       </p>
       <p>
         De leerling verplaatst de groen/blauwe balk, maar er is ook nog een paarse; die wordt verplaatst door de coach. Daarvoor is er de coach-modus, die er precies hetzelfde uitziet.
@@ -70,6 +70,16 @@ const ProgressMonitor = () => (
       <p>
         Een coach—mentor of leraar in de termen van een traditionele school—zorgt ervoor dat een leerling daadwerkelijk aan de slag gaat met rubrics; dat de intrinsieke motivatie er ook echt komt. Dat betekent niet dat een coach een leerling gaat dwingen—dat zou namelijk direct tegenstrijdig zijn met al het bovenstaande—maar wel dat intrinsieke motivatie en eigenaarschap over groei veelal enige stimulatie vragen, vooral in het begin. Bijvoorbeeld door sterke vraagstelling en door bewustmaking—&quot;hoe kunnen deze rubrics jou vooruit helpen?&quot;. En zodra het vuurtje eenmaal is aangewakkerd, komt de leerling vaak een heel eind.
       </p>
+      <h3>Agora VoortgangsMonitor ❤️ Agora ChallengeMonitor</h3>
+      <p>
+        Agora VoortgangsMonitor geeft leerlingen inzicht in hun groei binnen overkoepelende vaardigheden, maar geeft geen inzicht in hoe die groei tot stand komt. Daarvoor hebben we Agora ChallengeMonitor; voor het beheren van challenges—projecten—die groei teweeg brengen. Cruciaal dus.
+      </p>
+      <p>
+        Het geheel is meer dan de som van de delen:
+      </p>
+      <LinkButton to="./challengemonitor" style={{ marginBottom: 18 }}>
+        Meer over Agora ChallengeMonitor
+      </LinkButton>
       <h3>Meer weten?</h3>
       <p>
         Wil je meer informatie over ons programma, een demo, of gewoon wat vragen stellen over de achterliggende ideeën? Neem dan contact met ons op. We staan je graag te woord! Oh, en uiteraard altijd geheel vrijblijvend.
