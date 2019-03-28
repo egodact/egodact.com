@@ -24,6 +24,9 @@ const HeroSection = styled(Section)({
     paddingTop: 56,
     paddingBottom: 56,
     width: 'calc(100% - 48px)'
+  },
+  [mediaQuery(768)]: {
+    backgroundPositionY: 'top'
   }
 });
 
