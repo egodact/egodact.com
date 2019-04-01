@@ -32,7 +32,7 @@ const ChallengeMonitor = () => (
       </p>
       <Image src={exampleChallenge} alt="Voorbeeldchallenge in Agora ChallengeMonitor" />
       <p>
-        De coach kan deze velden niet aanpassen, maar enkel reacties achter laten, zodat de leerling eigenaar blijft van zijn leerproces. Verder kunnen leerlingen hun challenge delen met anderen en hun challenge onderverdelen in taken, als ze dat nodig achten.
+        De coach kan deze velden niet aanpassen, maar enkel reacties achter laten—het liefst wel in dialoog met de leerling—zodat de leerling eigenaar blijft van zijn leerproces. Verder kunnen leerlingen hun challenge delen met anderen en hun challenge onderverdelen in taken, als ze dat nodig achten.
       </p>
       <p>
         Ook kan de school aan de achterkant van de Agora ChallengeMonitor al deze velden volledig aanpassen:

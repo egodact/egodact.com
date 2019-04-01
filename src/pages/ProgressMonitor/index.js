@@ -35,7 +35,7 @@ const ProgressMonitor = () => (
         Met de slider die onder de niveaus staat, kan de leerling—helemaal zelfstandig, want leerlingen zijn de eigenaar van hun eigen ontwikkeling—zijn voortgang aangeven. De plus-knopjes kunnen gebruikt worden om een link (naar bijvoorbeeld een challenge uit de <Link to="./challengemonitor">Agora ChallengeMonitor</Link>) te koppelen aan dat niveau, om zo te bewijzen dat dat niveau ook daadwerkelijk behaald is. De niveaus die hier zichtbaar zijn zijn overigens wederom eigendom van <a href="http://niekee.nl/agora-vmbo-havo-vwo" target="_blank">Agora Roermond</a>.
       </p>
       <p>
-        De leerling verplaatst de groen/blauwe balk, maar er is ook nog een paarse; die wordt verplaatst door de coach. Daarvoor is er de coach-modus, die er precies hetzelfde uitziet.
+        De leerling verplaatst de groen/blauwe balk, maar er is ook nog een paarse; die wordt verplaatst door de coach. Dat gebeurt in dialoog met de leerling, zodat die altijd begrijpt waarom de coach de paarse balk op een bepaald punt zet. Het verplaatsen van de paarse balken verloopt overigens via de coach-modus, die er precies hetzelfde uitziet.
       </p>
       <p>
         Het laatste dat we hier nog willen benoemen is de geschiedenis-knop. Als een leerling—of coach—hierop klikt, verschijnt een balk die gebruikt kan worden om het portfolio—ofwel het gehele overzicht van rubrics met ingevulde sliders—van een moment in het verleden terug te halen:
