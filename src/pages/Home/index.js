@@ -10,7 +10,7 @@ import PlatformImage from './components/PlatformImage';
 import PlatformLink from './components/PlatformLink';
 import challengeMonitorPlatformImage from './components/platformImages/challengemonitor.png';
 import progressMonitorPlatformImage from './components/platformImages/progressmonitor.png';
-import SurTitle from './components/SurTitle';
+import Surtitle from './components/Surtitle';
 import PostsSection from './components/PostsSection';
 import LinkButton from '../../components/LinkButton';
 import { mediaQuery } from '../../styles';
@@ -79,9 +79,9 @@ const Home = () => (
     </Section>
     <Section css={{ [mediaQuery(1024)]: { backgroundColor: '#F5F5F5' } }}>
       <Container>
-        <SurTitle>
+        <Surtitle>
           Egodact ontwikkelt innovatieve onderwijssoftware...
-        </SurTitle>
+        </Surtitle>
         <Section.Title>
           ...die naadloos aansluit bij Agora onderwijs.
         </Section.Title>
