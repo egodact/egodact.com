@@ -1,11 +1,10 @@
 import React from 'react';
 import styled from 'react-emotion';
-import Container from '../Container';
+import EnglishBanner from './EnglishBanner';
+import HeaderContentWrapper from './HeaderContentWrapper';
 import { Link } from 'react-router-dom';
 import logo from './logo.svg';
 import Navigation from './Navigation';
-import useReactRouter from 'use-react-router';
-import { mediaQuery } from '../../styles';
 
 const StyledHeader = styled('header')({
   paddingTop: 12,
@@ -23,33 +22,16 @@ const Logo = styled('img')({
   height: 45
 });
 
-const StyledContainer = styled(Container)({
-  alignItems: 'center',
-  lineHeight: 0
-}, ({ isHomePage }) => ({
-  width: isHomePage ? 'calc(100% - 320px)' : null,
-  [mediaQuery(1200)]: {
-    width: isHomePage ? 836 : null
-  },
-  [mediaQuery(1024)]: {
-    width: isHomePage ? 'calc(100% - 48px)' : null
-  }
-}));
-
-const Header = () => {
-  const { location } = useReactRouter();
-  const isHomePage = location.pathname === '/';
-
-  return (
-    <StyledHeader>
-      <StyledContainer isHomePage={isHomePage} flex>
-        <SiteLink to="/">
-          <Logo src={logo} alt="Logo" />
-        </SiteLink>
-        <Navigation />
-      </StyledContainer>
-    </StyledHeader>
-  );
-};
+const Header = () => (
+  <StyledHeader>
+    <EnglishBanner />
+    <HeaderContentWrapper flex>
+      <SiteLink to="/">
+        <Logo src={logo} alt="Logo" />
+      </SiteLink>
+      <Navigation />
+    </HeaderContentWrapper>
+  </StyledHeader>
+);
 
 export default Header;
