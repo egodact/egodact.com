@@ -3,17 +3,24 @@ import { Helmet } from 'react-helmet';
 import PushToTop from '../../components/PushToTop';
 import Container from '../../components/Container';
 import ContactTiles from './components/ContactTiles';
+import { injectIntl, intlShape, FormattedMessage } from 'react-intl';
 
-const Contact = () => (
+const Contact = ({ intl }) => (
   <PushToTop>
     <Helmet>
-      <title>Contact</title>
+      <title>{intl.formatMessage({ id: 'pages.contact.page_title' })}</title>
     </Helmet>
     <Container>
-      <h1>Neem contact op met Egodact</h1>
+      <h1>
+        <FormattedMessage id="pages.contact.title" />
+      </h1>
       <ContactTiles />
     </Container>
   </PushToTop>
 );
 
-export default Contact;
+Contact.propTypes = {
+  intl: intlShape.isRequired
+};
+
+export default injectIntl(Contact);

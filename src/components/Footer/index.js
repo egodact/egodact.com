@@ -3,6 +3,7 @@ import Container from '../Container';
 import styled from 'react-emotion';
 import Col from './Col';
 import { Link } from 'react-router-dom';
+import { FormattedMessage, FormattedHTMLMessage } from 'react-intl';
 
 const StyledFooter = styled('footer')({
   paddingTop: 24,
@@ -20,29 +21,29 @@ const Footer = () => (
   <StyledFooter>
     <Container flex>
       <Col title={<span>&copy; {new Date().getFullYear()} Egodact</span>}>
-        Broncode is te vinden op <a href="https://github.com/egodact/egodact.com" target="_blank">GitHub</a>
+        <FormattedHTMLMessage id="footer.copyright.open_source" />
       </Col>
-      <Col title="Pagina's">
+      <Col title={<FormattedMessage id="footer.pages.title" />}>
         <PageLink to="/">
-          Home
+          <FormattedMessage id="footer.pages.navigation.home" />
         </PageLink>
         <PageLink to="/about">
-          Over
+          <FormattedMessage id="footer.pages.navigation.about" />
         </PageLink>
         <PageLink to="/contact">
-          Contact
+          <FormattedMessage id="footer.pages.navigation.contact" />
         </PageLink>
         <PageLink to="/privacy">
-          Privacy
+          <FormattedMessage id="footer.pages.navigation.privacy" />
         </PageLink>
         <PageLink to="/bugs">
-          Bugs
+          <FormattedMessage id="footer.pages.navigation.bugs" />
         </PageLink>
         <PageLink to="/open-source">
-          Open Source
+          <FormattedMessage id="footer.pages.navigation.open_source" />
         </PageLink>
         <PageLink to="/terms">
-          Voorwaarden
+          <FormattedMessage id="footer.pages.navigation.terms" />
         </PageLink>
       </Col>
       <Col title="Contact">

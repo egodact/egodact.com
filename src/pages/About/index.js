@@ -1,22 +1,30 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
 import PushToTop from '../../components/PushToTop';
 import Container from '../../components/Container';
 import Founders from './components/Founders';
+import { injectIntl, intlShape, FormattedMessage } from 'react-intl';
 
-const About = () => (
+const About = ({ intl }) => (
   <PushToTop>
     <Helmet>
-      <title>Over</title>
+      <title>{intl.formatMessage({ id: 'pages.about.page_title' })}</title>
     </Helmet>
     <Container>
-      <h1>Over Egodact</h1>
+      <h1>
+        <FormattedMessage id="pages.about.title" />
+      </h1>
       <p>
-        Egodact is in september 2018 opgericht door 3 gepassioneerde Agora leerlingen uit Roermond. Na 2 jaar in ontwikkeling te zijn geweest, wordt Egodact{`'`}s software, Agora ChallengeMonitor en Agora VoortgangsMonitor, opengesteld voor gebruik door andere changemakers scholen.
+        <FormattedMessage id="pages.about.text" />
       </p>
       <Founders />
     </Container>
   </PushToTop>
 );
 
-export default About;
+About.propTypes = {
+  intl: intlShape.isRequired
+};
+
+export default injectIntl(About);

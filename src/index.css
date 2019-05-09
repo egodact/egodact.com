@@ -41,34 +41,3 @@ p {
 p:last-child {
   margin-bottom: 0;
 }
-
-.image {
-  margin-bottom: 18;
-  width: 100%;
-  border: 3px solid #104E8B;
-}
-
-.link-button {
-  margin: 0;
-  padding: 6px 16px;
-  color: #FFFFFF;
-  background-color: #0017C6;
-  font: inherit;
-  font-weight: 500;
-  border: 1px solid #0017C6;
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -o-appearance: none;
-  -ms-appearance: none;
-  border-radius: 6;
-  box-sizing: border-box;
-  display: inline-block;
-  outline-width: 0;
-  cursor: pointer;
-}
-
-.link-button:hover {
-  background-color: #001299;
-  opacity: 1;
-}

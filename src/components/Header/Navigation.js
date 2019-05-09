@@ -1,7 +1,9 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'react-emotion';
 import { Link } from 'react-router-dom';
 import { mediaQuery } from '../../styles';
+import { injectIntl, intlShape } from 'react-intl';
 
 const StyledNavigation = styled('nav')({
   marginLeft: 'auto'
@@ -20,24 +22,24 @@ const StyledLink = styled(Link)({
   }
 });
 
-const links = [
+const links = intl => [
   {
-    name: 'Home',
+    name: intl.formatMessage({ id: 'header.navigation.home' }),
     url: '/'
   },
   {
-    name: 'Over',
+    name: intl.formatMessage({ id: 'header.navigation.about' }),
     url: '/about'
   },
   {
-    name: 'Contact',
+    name: intl.formatMessage({ id: 'header.navigation.contact' }),
     url: '/contact'
   }
 ];
 
-const Navigation = () => (
+const Navigation = ({ intl }) => (
   <StyledNavigation>
-    {links.map(link =>
+    {links(intl).map(link =>
       <StyledLink to={link.url} key={link.url}>
         {link.name}
       </StyledLink>
@@ -45,4 +47,8 @@ const Navigation = () => (
   </StyledNavigation>
 );
 
-export default Navigation;
+Navigation.propTypes = {
+  intl: intlShape.isRequired
+};
+
+export default injectIntl(Navigation);
