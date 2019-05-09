@@ -23,7 +23,7 @@ const EnglishBanner = () => {
   return (
     <StyledBanner>
       <HeaderContentWrapper style={lineHeightFix}>
-        Don{`'`}t speak Dutch? Learn more about us on <MediumLink href="https://medium.com/egodact" target="_blank">Medium</MediumLink>
+        Don{`'`}t speak Dutch? You can read more on on <MediumLink href="https://medium.com/egodact" target="_blank">Medium</MediumLink>
         <CloseButton onClick={() => setOpen(false)}>
           no, thanks
         </CloseButton>

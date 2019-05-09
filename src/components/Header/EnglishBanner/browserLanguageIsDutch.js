@@ -1,4 +1,4 @@
-const dutchLocales = ['nl-NL', 'nl-BE'];
+const dutchLocales = ['nl-NL', 'nl-BE', 'nl'];
 
 const browserLanguageIsDutch = () =>
   dutchLocales.includes(navigator.language);

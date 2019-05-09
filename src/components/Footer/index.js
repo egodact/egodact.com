@@ -46,21 +46,8 @@ const Footer = () => (
           <FormattedMessage id="footer.pages.navigation.terms" />
         </PageLink>
       </Col>
-      <Col title="Contact">
-        Egodact vof,
-        <br />
-        Pierre Cuypersstraat 34,
-        <br/>
-        6041XH Roermond
-        <br />
-        <a href="mailto:contact@egodact.com">contact@egodact.com</a>
-        <br />
-        +31 6 27341748
-        <br />
-        <br />
-        KvK: 72607467
-        <br />
-        BTW-nummer: 859171838B01
+      <Col title={<FormattedMessage id="footer.contact.title" />}>
+        <FormattedHTMLMessage id="footer.contact.text" />
       </Col>
     </Container>
   </StyledFooter>
