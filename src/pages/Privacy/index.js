@@ -1,15 +1,22 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
 import PushToTop from '../../components/PushToTop';
 import Container from '../../components/Container';
+import { injectIntl, intlShape, FormattedMessage } from 'react-intl';
 
-const Privacy = () => (
+const Privacy = ({ intl }) => (
   <PushToTop>
     <Helmet>
-      <title>Privacy</title>
+      <title>{intl.formatMessage({ id: 'pages.privacy.page_title' })}</title>
     </Helmet>
     <Container>
-      <h1>Privacy</h1>
+      <h1>
+        <FormattedMessage id="pages.privacy.title" />
+      </h1>
+      <p>
+        <FormattedMessage id="pages.privacy.text" />
+      </p>
       <h4>Agora ChallengeMonitor</h4>
       <ul>
         <li>
@@ -54,4 +61,8 @@ const Privacy = () => (
   </PushToTop>
 );
 
-export default Privacy;
+Privacy.propTypes = {
+  intl: intlShape.isRequired
+};
+
+export default injectIntl(Privacy);

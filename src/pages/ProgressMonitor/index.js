@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
 import PushToTop from '../../components/PushToTop';
 import Container from '../../components/Container';
@@ -8,87 +9,136 @@ import LinkButton from '../../components/LinkButton';
 import portfolioScreenshot from './images/portfolio-screenshot.png';
 import rubricLevels from './images/rubric-levels.png';
 import historyBar from './images/history-bar.png';
+import {
+  injectIntl,
+  intlShape,
+  FormattedMessage,
+  FormattedHTMLMessage
+} from 'react-intl';
 
-const ProgressMonitor = () => (
+const ProgressMonitor = ({ intl }) => (
   <PushToTop>
     <Helmet>
-      <title>Agora VoortgangsMonitor</title>
+      <title>
+        {intl.formatMessage({ id: 'pages.progressmonitor.page_title' })}
+      </title>
     </Helmet>
     <Container>
-      <h1>Agora VoortgangsMonitor</h1>
+      <h1>
+        <FormattedMessage id="pages.progressmonitor.title" />
+      </h1>
       <p>
-        Agora VoortgangsMonitor is een programma dat leerlingen een overzicht geeft van rubrics—ingesteld door de school—waarin zij zelfstandig hun voortgang bij kunnen houden. De leraar of mentor, ofwel de coach in Agora terminologie, bevestigt of weerlegt enkel deze voortgang.
+        <FormattedMessage id="pages.progressmonitor.text" />
       </p>
-      <h3>De kern van Agora VoortgangsMonitor</h3>
+      <h3>
+        <FormattedMessage id="pages.progressmonitor.sections.intro.title" />
+      </h3>
       <p>
-        In de praktijk betekent dat dat leerlingen, bijvoorbeeld, het volgende zien wanneer zij inloggen—via hun Google of Microsoft account—in ons programma:
+        <FormattedHTMLMessage id="pages.progressmonitor.sections.intro.content.0" />
       </p>
-      <Image src={portfolioScreenshot} alt="Screenshot van een portfolio" />
+      <Image
+        src={portfolioScreenshot}
+        alt={intl.formatMessage({
+          id: 'pages.progressmonitor.sections.intro.content.1'
+        })}
+      />
       <p>
-        Wat je hier ziet is, zoals beloofd, een overzicht van rubrics, gestructureerd door middel van onderwerpen, subonderwerpen en onderdelen. De rubrics die je ziet, zijn trouwens geen onderdeel van het programma: deze zijn 'toevallig' zo ingesteld door <a href="http://niekee.nl/agora-vmbo-havo-vwo" target="_blank">Agora Roermond</a>. Als school heb je volledige controle over alle rubrics.
-      </p>
-      <p>
-        Welnu, aan enkel een overzicht hebben we natuurlijk weinig. Daarom hebben we die sliders: zij representeren met hun kleuren de voortgang van de leerling binnen de niveaus van de rubric. Deze niveaus kunnen bekeken worden door simpelweg op een onderdeel te klikken. Je krijgt dan, bijvoorbeeld, het volgende te zien:
-      </p>
-      <Image src={rubricLevels} alt="Niveaus binnen een rubric" />
-      <p>
-        Met de slider die onder de niveaus staat, kan de leerling—helemaal zelfstandig, want leerlingen zijn de eigenaar van hun eigen ontwikkeling—zijn voortgang aangeven. De plus-knopjes kunnen gebruikt worden om een link (naar bijvoorbeeld een challenge uit de <Link to="./challengemonitor">Agora ChallengeMonitor</Link>) te koppelen aan dat niveau, om zo te bewijzen dat dat niveau ook daadwerkelijk behaald is. De niveaus die hier zichtbaar zijn zijn overigens wederom eigendom van <a href="http://niekee.nl/agora-vmbo-havo-vwo" target="_blank">Agora Roermond</a>.
-      </p>
-      <p>
-        De leerling verplaatst de groen/blauwe balk, maar er is ook nog een paarse; die wordt verplaatst door de coach. Dat gebeurt in dialoog met de leerling, zodat die altijd begrijpt waarom de coach de paarse balk op een bepaald punt zet. Het verplaatsen van de paarse balken verloopt overigens via de coach-modus, die er precies hetzelfde uitziet.
-      </p>
-      <p>
-        Het laatste dat we hier nog willen benoemen is de geschiedenis-knop. Als een leerling—of coach—hierop klikt, verschijnt een balk die gebruikt kan worden om het portfolio—ofwel het gehele overzicht van rubrics met ingevulde sliders—van een moment in het verleden terug te halen:
-      </p>
-      <Image src={historyBar} alt="De geschiedenis-balk" />
-      <p>
-         Deze 'snapshots' van het portfolio worden wekelijks gemaakt.
-      </p>
-      <h3>Hoe Agora VoortgangsMonitor bijdraagt aan motivatie</h3>
-      <p>
-        Agora VoortgangsMonitor berust op intrinsieke motivatie. Maar hoe creëren we die dan? Met twee dingen: rubrics en formatief assessment.
-      </p>
-      <h4>Rubrics</h4>
-      <p>
-        Manier nummer een is de rubrics die hierboven al voorbij zijn gekomen. Zij vervangen cijfers met iets beters: duidelijkheid. Rubrics beschrijven namelijk alle niveaus binnen een gekozen onderdeel; bijgevolg is het dan altijd duidelijk wat een bepaald niveau binnen een rubric betekent. Leerlingen krijgen niet langer een abstract cijfer waar ze niets mee kunnen, nee, zij krijgen een duidelijke beschrijving van waar ze staan. Die duidelijkheid draagt bij aan motivatie en stimuleert eigenaarschap over groei.
-      </p>
-      <h4>Formatief assessment</h4>
-      <p>
-        Het tweede punt dat we toepassen in Agora VoortgangsMonitor is formatief assessment. Dat houdt in dat leerlingen met zichzelf vergeleken worden en niet met anderen, en dat voor hen zichtbaar is wat al goed gaat, en wat beter kan; dit zie je direct in Agora VoortgangsMonitor terug met het overzicht van alle rubrics en de voortgang in die rubrics.
+        <FormattedHTMLMessage id="pages.progressmonitor.sections.intro.content.2" />
       </p>
       <p>
-        Wat volgt uit formatief assessment is intrinsieke motivatie en eigenaarschap over groei. Waarom? Omdat er gefocust wordt op ontwikkeling, en enkel ontwikkeling. Niet competitieve cijferspelletjes met medeleerlingen die niets met leren te maken hebben en die leerlingen hevig straffen voor fouten—ondanks dat je juist het meest leert van fouten. Met formatief assessment wordt echt leren gestimuleerd, en de enige competitie die leerling heeft, is die met een oudere versie van zichzelf; fouten zijn toegestaan, en de leerling zit bovenop zijn eigen ontwikkeling.
+        <FormattedHTMLMessage id="pages.progressmonitor.sections.intro.content.3" />
       </p>
-      <h4>Eigenaarschap over groei</h4>
+      <Image
+        src={rubricLevels}
+        alt={intl.formatMessage({
+          id: 'pages.progressmonitor.sections.intro.content.4'
+        })}
+      />
       <p>
-        Hierboven hebben we enkele malen eigenaarschap over groei benoemd. Dat is een synoniem voor intrinsieke motivatie; wanneer een leerling écht de eigenaar is van zijn groei, zal hij automatisch gemotiveerd zijn om verder te groeien. Intrinsieke motivatie dus, het soort dat leerlingen vooruit helpt.
-      </p>
-      <h3>Een stukje eerlijkheid—coachen is cruciaal</h3>
-      <p>
-        Het zou ronduit belachelijk zijn om te beweren dat enkel een instantie van Agora VoortgangsMonitor, gekoppeld aan een sterke set rubrics, genoeg is om leerlingen te motiveren en te laten groeien. Daar is namelijk nog een extra ingrediënt voor nodig: goede coaching.
-      </p>
-      <p>
-        Een coach—mentor of leraar in de termen van een traditionele school—zorgt ervoor dat een leerling daadwerkelijk aan de slag gaat met rubrics; dat de intrinsieke motivatie er ook echt komt. Dat betekent niet dat een coach een leerling gaat dwingen—dat zou namelijk direct tegenstrijdig zijn met al het bovenstaande—maar wel dat intrinsieke motivatie en eigenaarschap over groei veelal enige stimulatie vragen, vooral in het begin. Bijvoorbeeld door sterke vraagstelling en door bewustmaking—&quot;hoe kunnen deze rubrics jou vooruit helpen?&quot;. En zodra het vuurtje eenmaal is aangewakkerd, komt de leerling vaak een heel eind.
-      </p>
-      <h3>Agora VoortgangsMonitor ❤️ Agora ChallengeMonitor</h3>
-      <p>
-        Agora VoortgangsMonitor geeft leerlingen inzicht in hun groei binnen overkoepelende vaardigheden, maar geeft geen inzicht in hoe die groei tot stand komt. Daarvoor hebben we Agora ChallengeMonitor; voor het beheren van challenges—projecten—die groei teweeg brengen. Cruciaal dus.
+        <FormattedHTMLMessage id="pages.progressmonitor.sections.intro.content.5" />
+        <Link to="./challengemonitor">
+          <FormattedHTMLMessage id="pages.progressmonitor.sections.intro.content.6" />
+        </Link>
+        <FormattedHTMLMessage id="pages.progressmonitor.sections.intro.content.7" />
       </p>
       <p>
-        Het geheel is meer dan de som van de delen:
+        <FormattedHTMLMessage id="pages.progressmonitor.sections.intro.content.8" />
+      </p>
+      <p>
+        <FormattedHTMLMessage id="pages.progressmonitor.sections.intro.content.9" />
+      </p>
+      <Image
+        src={historyBar}
+        alt={intl.formatMessage({
+          id: 'pages.progressmonitor.sections.intro.content.10'
+        })}
+      />
+      <p>
+        <FormattedHTMLMessage id="pages.progressmonitor.sections.intro.content.11" />
+      </p>
+      <h3>
+        <FormattedMessage id="pages.progressmonitor.sections.motivation.title" />
+      </h3>
+      <p>
+        <FormattedHTMLMessage id="pages.progressmonitor.sections.motivation.content.0" />
+      </p>
+      <h4>
+        <FormattedHTMLMessage id="pages.progressmonitor.sections.motivation.content.1" />
+      </h4>
+      <p>
+        <FormattedHTMLMessage id="pages.progressmonitor.sections.motivation.content.2" />
+      </p>
+      <h4>
+        <FormattedHTMLMessage id="pages.progressmonitor.sections.motivation.content.3" />
+      </h4>
+      <p>
+        <FormattedHTMLMessage id="pages.progressmonitor.sections.motivation.content.4" />
+      </p>
+      <p>
+        <FormattedHTMLMessage id="pages.progressmonitor.sections.motivation.content.5" />
+      </p>
+      <h4>
+        <FormattedHTMLMessage id="pages.progressmonitor.sections.motivation.content.6" />
+      </h4>
+      <p>
+        <FormattedHTMLMessage id="pages.progressmonitor.sections.motivation.content.7" />
+      </p>
+      <h3>
+        <FormattedMessage id="pages.progressmonitor.sections.coaching.title" />
+      </h3>
+      <p>
+        <FormattedHTMLMessage id="pages.progressmonitor.sections.coaching.content.0" />
+      </p>
+      <p>
+        <FormattedHTMLMessage id="pages.progressmonitor.sections.coaching.content.1" />
+      </p>
+      <h3>
+        <FormattedMessage id="pages.progressmonitor.sections.combine.title" />
+      </h3>
+      <p>
+        <FormattedHTMLMessage id="pages.progressmonitor.sections.combine.content.0" />
+      </p>
+      <p>
+        <FormattedHTMLMessage id="pages.progressmonitor.sections.combine.content.1" />
       </p>
       <LinkButton to="./challengemonitor" style={{ marginBottom: 18 }}>
-        Meer over Agora ChallengeMonitor
+        <FormattedHTMLMessage id="pages.progressmonitor.sections.combine.content.2" />
       </LinkButton>
-      <h3>Meer weten?</h3>
+      <h3>
+        <FormattedMessage id="pages.progressmonitor.sections.contact.title" />
+      </h3>
       <p>
-        Wil je meer informatie over ons programma, een demo, of gewoon wat vragen stellen over de achterliggende ideeën? Neem dan contact met ons op. We staan je graag te woord! Oh, en uiteraard altijd geheel vrijblijvend.
+        <FormattedHTMLMessage id="pages.progressmonitor.sections.contact.content.0" />
       </p>
       <LinkButton to="/contact">
-        Neem contact op
+        <FormattedHTMLMessage id="pages.progressmonitor.sections.contact.content.1" />
       </LinkButton>
     </Container>
   </PushToTop>
 );
 
-export default ProgressMonitor;
+ProgressMonitor.propTypes = {
+  intl: intlShape.isRequired
+};
+
+export default injectIntl(ProgressMonitor);
