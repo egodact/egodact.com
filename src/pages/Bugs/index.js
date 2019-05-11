@@ -1,25 +1,33 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
 import PushToTop from '../../components/PushToTop';
 import Container from '../../components/Container';
+import {
+  injectIntl,
+  intlShape,
+  FormattedMessage,
+  FormattedHTMLMessage
+} from 'react-intl';
 
-const Bugs = () => (
+const Bugs = ({ intl }) => (
   <PushToTop>
     <Helmet>
-      <title>Bugs</title>
+      <title>{intl.formatMessage({ id: 'pages.bugs.page_title' })}</title>
     </Helmet>
     <Container>
-      <h1>Bugs melden</h1>
+      <h1>
+        <FormattedMessage id="pages.bugs.title" />
+      </h1>
       <p>
-        Heb je een bug of typefout gevonden? Graag horen we van je zodat we hem kunnen oplossen.
-        <br />
-        <a href="mailto:bugs@egodact.com">Stuur een e-mail</a>
-        <br />
-        <br />
-        Ook kun je een issue aanmaken op GitHub: <a href="https://github.com/egodact/egodact-issues" target="_blank">maak een issue aan op GitHub</a>
+        <FormattedHTMLMessage id="pages.bugs.text" />
       </p>
     </Container>
   </PushToTop>
 );
 
-export default Bugs;
+Bugs.propTypes = {
+  intl: intlShape.isRequired
+};
+
+export default injectIntl(Bugs);

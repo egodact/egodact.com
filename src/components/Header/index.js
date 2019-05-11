@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'react-emotion';
-import EnglishBanner from './EnglishBanner';
 import HeaderContentWrapper from './HeaderContentWrapper';
 import { Link } from 'react-router-dom';
 import logo from './logo.svg';
@@ -24,7 +23,6 @@ const Logo = styled('img')({
 
 const Header = () => (
   <StyledHeader>
-    <EnglishBanner />
     <HeaderContentWrapper flex>
       <SiteLink to="/">
         <Logo src={logo} alt="Logo" />

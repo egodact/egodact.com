@@ -1,27 +1,35 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
 import PushToTop from '../../components/PushToTop';
 import Container from '../../components/Container';
+import {
+  injectIntl,
+  intlShape,
+  FormattedMessage,
+  FormattedHTMLMessage
+} from 'react-intl';
 
-const OpenSource = () => (
+const OpenSource = ({ intl }) => (
   <PushToTop>
     <Helmet>
-      <title>Open Source</title>
+      <title>
+        {intl.formatMessage({ id: 'pages.open_source.page_title' })}
+      </title>
     </Helmet>
     <Container>
-      <h1>Open Source</h1>
+      <h1>
+        <FormattedMessage id="pages.open_source.title" />
+      </h1>
       <p>
-        De Agora VoortgangsMonitor en de Agora ChallengeMonitor maken veel gebruik van open source projecten. De licenties van deze projecten zijn te vinden in de volgende zip bestanden:
-        <br />
-        <a href="/_open-source/licences/challengemonitor-licences.zip">Agora ChallengeMonitor licenties</a>
-        <br />
-        <a href="/_open-source/licences/progressmonitor-licences.zip">Agora VoortgangsMonitor licenties</a>
-        <br />
-        <br />
-        Egodact heeft zelf ook enkele open source projecten gepubliceerd. Deze projecten zijn te vinden op <a href="https://github.com/egodact" target="_blank">GitHub</a>.
+        <FormattedHTMLMessage id="pages.open_source.text" />
       </p>
     </Container>
   </PushToTop>
 );
 
-export default OpenSource;
+OpenSource.propTypes = {
+  intl: intlShape.isRequired
+};
+
+export default injectIntl(OpenSource);

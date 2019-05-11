@@ -5,6 +5,7 @@ import PostContentWrapper from './PostContentWrapper';
 import PostTitle from './PostTitle';
 import PostDescription from './PostDescription';
 import PostLink from './PostLink';
+import { FormattedMessage } from 'react-intl';
 
 const Post = ({ post, highlighted, ...props }) => (
   <StyledPost backgroundImage={post.image} highlighted={highlighted}>
@@ -14,7 +15,7 @@ const Post = ({ post, highlighted, ...props }) => (
         {post.description}
       </PostDescription>
       <PostLink href={post.link} target="_blank">
-        Lees dit artikel op Medium
+        <FormattedMessage id="pages.home.sections.posts.read_button" />
       </PostLink>
     </PostContentWrapper>
   </StyledPost>

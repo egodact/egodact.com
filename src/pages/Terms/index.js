@@ -1,15 +1,22 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
 import PushToTop from '../../components/PushToTop';
 import Container from '../../components/Container';
+import { injectIntl, intlShape, FormattedMessage } from 'react-intl';
 
-const Terms = () => (
+const Terms = ({ intl }) => (
   <PushToTop>
     <Helmet>
-      <title>Voorwaarden</title>
+      <title>{intl.formatMessage({ id: 'pages.terms.page_title' })}</title>
     </Helmet>
     <Container>
-      <h1>Voorwaarden</h1>
+      <h1>
+        <FormattedMessage id="pages.terms.title" />
+      </h1>
+      <p>
+        <FormattedMessage id="pages.terms.text" />
+      </p>
       <h4>Agora ChallengeMonitor</h4>
       <ul>
         <li>
@@ -50,4 +57,8 @@ const Terms = () => (
   </PushToTop>
 );
 
-export default Terms;
+Terms.propTypes = {
+  intl: intlShape.isRequired
+};
+
+export default injectIntl(Terms);
