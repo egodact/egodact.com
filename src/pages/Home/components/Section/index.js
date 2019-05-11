@@ -5,8 +5,12 @@ import SectionHalf from './SectionHalf';
 import { mediaQuery } from '../../../../styles';
 
 const Section = styled('section')({
-  paddingTop: 84,
-  paddingBottom: 84,
+  paddingTop: 'calc(100vw / 16)',
+  paddingBottom: 'calc(100vw / 16)',
+  '@media screen and (min-width: 2000px)': {
+    paddingTop: 125,
+    paddingBottom: 125
+  },
   [mediaQuery(1024)]: {
     paddingTop: 24,
     paddingBottom: 24
@@ -19,6 +23,10 @@ const Section = styled('section')({
       paddingTop: 0,
       paddingBottom: 0,
       display: 'flex',
+      '@media screen and (min-width: 2000px)': {
+        paddingTop: 0,
+        paddingBottom: 0,
+      },
       [mediaQuery(1024)]: {
         paddingTop: 0,
         paddingBottom: 0,

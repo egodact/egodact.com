@@ -38,7 +38,7 @@
   "pages.terms.text": "The usage of Agora ChallengeMonitor and Agora ProgressMonitor is subjected to the following (Dutch) terms.",
   "pages.home.page_title": "Home",
   "pages.home.sections.hero.title": "Egodact develops innovative education software",
-  "pages.home.sections.intro.title": "...that helps motivating students",
+  "pages.home.sections.intro.title": "...that helps <span style=\"color: #0017C6\">motivating</span> students",
   "pages.home.sections.intro.text": "We focus on schools who do dare to go further for their students. Our software builds on student-centred learning and gives students a proactive role in their own development.<br><br>By centring our software round the student, we remove the demotivating effect of hour-long monologues. Students work on things that they're passionate about, and don't receive an endless stream of assignments and commands from their school and teachers. Through these principles, we trigger intrinsic motivation and improve the quality of learning.",
   "pages.home.sections.progressmonitor.title": "Agora ProgressMonitor",
   "pages.home.sections.progressmonitor.text": "Agora ProgressMonitor gives students an overview of rubrics—provided by the school—in which they can autonomously and proactively record their progress. The teacher or mentor—the coach in Agora terminology—only confirms or refutes this progress.",

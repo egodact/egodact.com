@@ -38,7 +38,7 @@ const Home = ({ intl }) => (
     <Section>
       <Container>
         <Section.Title>
-          <FormattedMessage id="pages.home.sections.intro.title" />
+          <FormattedHTMLMessage id="pages.home.sections.intro.title" />
         </Section.Title>
         <Section.Text>
           <FormattedHTMLMessage id="pages.home.sections.intro.text" />
