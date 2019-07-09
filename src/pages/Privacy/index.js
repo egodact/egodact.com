@@ -3,7 +3,12 @@ import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
 import PushToTop from '../../components/PushToTop';
 import Container from '../../components/Container';
-import { injectIntl, intlShape, FormattedMessage } from 'react-intl';
+import {
+  injectIntl,
+  intlShape,
+  FormattedMessage,
+  FormattedHTMLMessage
+} from 'react-intl';
 
 const Privacy = ({ intl }) => (
   <PushToTop>
@@ -55,7 +60,7 @@ const Privacy = ({ intl }) => (
       </ul>
       <br />
       <p>
-        Egodact is aangemeld bij het <a href="https://www.privacyconvenant.nl" target="_blank">Privacy Convenant</a>.
+        <FormattedHTMLMessage id="pages.privacy.privacy_convenant_text" />
       </p>
     </Container>
   </PushToTop>
