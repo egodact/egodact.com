@@ -62,6 +62,12 @@ const Privacy = ({ intl }) => (
       <p>
         <FormattedHTMLMessage id="pages.privacy.privacy_convenant_text" />
       </p>
+      <h4>
+        <FormattedMessage id="pages.privacy.analytics.title" />
+      </h4>
+      <p>
+        <FormattedHTMLMessage id="pages.privacy.analytics.text" />
+      </p>
     </Container>
   </PushToTop>
 );
