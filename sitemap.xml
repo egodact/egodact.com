@@ -4,15 +4,27 @@
     <loc>https://egodact.com</loc>
   </url>
   <url>
-    <loc>https://egodact.com/privacy</loc>
+    <loc>https://egodact.com/about</loc>
+  </url>
+  <url>
+    <loc>https://egodact.com/bugs</loc>
   </url>
   <url>
     <loc>https://egodact.com/contact</loc>
   </url>
   <url>
-    <loc>https://egodact.com/terms</loc>
+    <loc>https://egodact.com/progressmonitor</loc>
   </url>
   <url>
-    <loc>https://egodact.com/bugs</loc>
+    <loc>https://egodact.com/challengemonitor</loc>
+  </url>
+  <url>
+    <loc>https://egodact.com/open-source</loc>
+  </url>
+  <url>
+    <loc>https://egodact.com/privacy</loc>
+  </url>
+  <url>
+    <loc>https://egodact.com/terms</loc>
   </url>
 </urlset>
