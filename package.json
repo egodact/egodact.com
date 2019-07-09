@@ -2,6 +2,7 @@
   "name": "egodact.com",
   "version": "1.0.0",
   "description": "Egodact homepage",
+  "private": true,
   "main": "index.js",
   "scripts": {
     "start": "parcel index.html",
