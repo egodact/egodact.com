@@ -6,7 +6,8 @@ import { transition, mediaQuery } from '../../../../../styles';
 const StyledPost = styled('article')({
   color: white,
   textAlign: 'center',
-  border: `2px solid ${logoBlue}`,
+  borderTop: `2px solid ${logoBlue}`,
+  borderBottom: `2px solid ${logoBlue}`,
   boxSizing: 'border-box',
   display: 'flex',
   justifyContent: 'center',
@@ -29,6 +30,7 @@ const StyledPost = styled('article')({
   backgroundPosition: 'center',
   backgroundSize: 'cover',
   backgroundRepeat: 'no-repeat',
+  border: highlighted ? `2px solid ${logoBlue}` : null,
   [mediaQuery(1024)]: {
     padding: highlighted ? 24 : null,
     paddingTop: highlighted ? 48 : null,

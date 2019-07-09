@@ -1,9 +1,9 @@
 import caseStudyPostImage from './postImages/case-study.png';
 import aboutEgodactPostImage from './postImages/about-egodact.png';
-import roadmap2019PostImage from './postImages/roadmap-2019.jpeg';
-import januaryUpdatePostImage from './postImages/january-update.png';
-import februaryUpdatePostImage from './postImages/february-update.png';
+import roadmapStatusUpdateImage from './postImages/roadmap-status-update.jpeg';
+import mayUpdatePostImage from './postImages/may-update.png';
 import marchUpdatePostImage from './postImages/march-update.png';
+import februaryUpdatePostImage from './postImages/february-update.png';
 
 const posts = [
   {
@@ -19,28 +19,28 @@ const posts = [
     image: aboutEgodactPostImage
   },
   {
-    title: 'Egodact roadmap 2019',
-    description: '2018 has almost come to an end. This past year, Egodact was finally founded — after tons of preparation — and has started to release its software to schools. We, personally, are very excited to see what the future holds for Egodact, and will continue to improve our software in the next year.',
-    link: 'https://medium.com/egodact/egodact-roadmap-2019-1ac49b789032',
-    image: roadmap2019PostImage
+    title: 'Egodact roadmap status update',
+    description: 'As the first quarter of the year has recently passed, we figured it’s interesting to see how far we’ve come already in achieving the goals we’ve set for ourselves in our roadmap.',
+    link: 'https://medium.com/egodact/egodact-roadmap-status-update-be09dbd716c5',
+    image: roadmapStatusUpdateImage
   },
   {
-    title: 'January update Egodact software',
-    description: 'This post is the first in our series of release notes. We strive to make our release cycle as well as the changes to our software transparent and well-documented, and our series of release notes is going to fulfil an important role in the achievement of this goal.',
-    link: 'https://medium.com/egodact/january-update-egodact-software-396822872722',
-    image: januaryUpdatePostImage
-  },
-  {
-    title: 'February update Egodact software',
-    description: 'The end of February is near, and therefore, it’s time to publish our February release.',
-    link: 'https://medium.com/egodact/february-update-egodact-software-7b2d3c4e6230',
-    image: februaryUpdatePostImage
+    title: 'May release: redesign & responsiveness',
+    description: 'It’s been a while — we skipped the April update — but finally, it’s done. The redesign announced in the March update is here.',
+    link: 'https://medium.com/egodact/may-release-redesign-responsiveness-9fefe84a89ad',
+    image: mayUpdatePostImage
   },
   {
     title: 'March update Egodact software',
     description: 'Yet again, the end of the month is near. Today, that means that we’ll publish our March release.',
     link: 'https://medium.com/egodact/march-update-egodact-software-12c664e3cfcd',
     image: marchUpdatePostImage
+  },
+  {
+    title: 'February update Egodact software',
+    description: 'The end of February is near, and therefore, it’s time to publish our February release.',
+    link: 'https://medium.com/egodact/february-update-egodact-software-7b2d3c4e6230',
+    image: februaryUpdatePostImage
   }
 ];
 
