@@ -17,39 +17,15 @@ const Terms = ({ intl }) => (
       <p>
         <FormattedMessage id="pages.terms.text" />
       </p>
-      <h4>Agora ChallengeMonitor</h4>
       <ul>
         <li>
-          <a href="/_terms/docs/sla-agora-challengemonitor.pdf" target="_blank">
-            Service level agreement Agora ChallengeMonitor
+          <a href="/_terms/docs/sla-egodact-software.pdf" target="_blank">
+            Service level agreement Egodact software
           </a>
         </li>
         <li>
-          <a href="/_terms/docs/algemene-voorwaarden-agora-challengemonitor.pdf" target="_blank">
-            Algemene voorwaarden Agora ChallengeMonitor
-          </a>
-        </li>
-        <li>
-          <a href="/_terms/docs/gebruiksvoorwaarden-agora-challengemonitor.pdf" target="_blank">
-            Gebruiksvoorwaarden Agora ChallengeMonitor
-          </a>
-        </li>
-      </ul>
-      <h4>Agora VoortgangsMonitor</h4>
-      <ul>
-        <li>
-          <a href="/_terms/docs/sla-agora-voortgangsmonitor.pdf" target="_blank">
-            Service level agreement Agora VoortgangsMonitor
-          </a>
-        </li>
-        <li>
-          <a href="/_terms/docs/algemene-voorwaarden-agora-voortgangsmonitor.pdf" target="_blank">
-            Algemene voorwaarden Agora VoortgangsMonitor
-          </a>
-        </li>
-        <li>
-          <a href="/_terms/docs/gebruiksvoorwaarden-agora-voortgangsmonitor.pdf" target="_blank">
-            Gebruiksvoorwaarden Agora VoortgangsMonitor
+          <a href="/_terms/docs/algemene-voorwaarden-egodact-software.pdf" target="_blank">
+            Algemene voorwaarden Egodact software
           </a>
         </li>
       </ul>
