@@ -29,7 +29,7 @@
   "pages.not_found.homepage_button": "Naar de homepagina",
   "pages.open_source.page_title": "Open Source",
   "pages.open_source.title": "Open Source",
-  "pages.open_source.text": "De Agora VoortgangsMonitor en de Agora ChallengeMonitor maken veel gebruik van open source projecten. De licenties van deze projecten zijn te vinden in de volgende zip bestanden:<br><a href=\"/_open-source/licences/challengemonitor-licences.zip\">Agora ChallengeMonitor licenties</a><br><a href=\"/_open-source/licences/progressmonitor-licences.zip\">Agora VoortgangsMonitor licenties</a><br><br>Egodact heeft zelf ook enkele open source projecten gepubliceerd. Deze projecten zijn te vinden op <a href=\"https://github.com/egodact\" target=\"_blank\">GitHub</a>.",
+  "pages.open_source.text": "De Agora VoortgangsMonitor en de Agora ChallengeMonitor maken veel gebruik van open source projecten. De licenties van deze projecten zijn te vinden in <a href=\"/_open-source/licences.txt\">dit bestand</a>.<br><br>Egodact heeft zelf ook enkele open source projecten gepubliceerd. Deze projecten zijn te vinden op <a href=\"https://github.com/egodact\" target=\"_blank\">GitHub</a>.",
   "pages.privacy.page_title": "Privacy",
   "pages.privacy.title": "Privacy",
   "pages.privacy.text": "De volgende privacygerelateerde documenten worden gebruikt door Agora ChallengeMonitor en Agora VoortgangsMonitor.",

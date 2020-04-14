@@ -29,7 +29,7 @@
   "pages.not_found.homepage_button": "Back to home page",
   "pages.open_source.page_title": "Open Source",
   "pages.open_source.title": "Open Source",
-  "pages.open_source.text": "The Agora ChallengeMonitor and Agora ProgressMonitor rely heavily on open source projects. The licences of these projects can be found in the following zip files:<br><a href=\"/_open-source/licences/challengemonitor-licences.zip\">Agora ChallengeMonitor licences</a><br><a href=\"/_open-source/licences/progressmonitor-licences.zip\">Agora ProgressMonitor licences</a><br><br>Egodact published some open source projects of its own. These projects can be found on <a href=\"https://github.com/egodact\" target=\"_blank\">GitHub</a>.",
+  "pages.open_source.text": "The Agora ChallengeMonitor and Agora ProgressMonitor rely heavily on open source projects. The licences of these projects can be found in <a href=\"/_open-source/licences.txt\">this file</a>.<br><br>Egodact published some open source projects of its own. These projects can be found on <a href=\"https://github.com/egodact\" target=\"_blank\">GitHub</a>.",
   "pages.privacy.page_title": "Privacy",
   "pages.privacy.title": "Privacy",
   "pages.privacy.text": "The following privacy-related documents are used by Agora ChallengeMonitor and Agora ProgressMonitor.",
