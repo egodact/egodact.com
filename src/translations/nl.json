@@ -2,6 +2,7 @@
   "header.navigation.home": "Home",
   "header.navigation.about": "Over",
   "header.navigation.contact": "Contact",
+  "header.navigation.sign_in_button": "Inloggen",
   "footer.copyright.open_source": "Broncode van de homepagina is te vinden op <a href=\"https://github.com/egodact/egodact.com\" target=\"_blank\">GitHub</a>",
   "footer.pages.title": "Pagina's",
   "footer.pages.navigation.home": "Home",

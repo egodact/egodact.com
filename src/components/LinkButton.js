@@ -8,4 +8,6 @@ const LinkButton = styled(Link)(...buttonStyles, {
   }
 });
 
+export const StandardLinkButton = LinkButton.withComponent('a');
+
 export default LinkButton;

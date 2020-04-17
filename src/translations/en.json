@@ -2,6 +2,7 @@
   "header.navigation.home": "Home",
   "header.navigation.about": "About",
   "header.navigation.contact": "Contact",
+  "header.navigation.sign_in_button": "Sign in",
   "footer.copyright.open_source": "Home page source code can be found on <a href=\"https://github.com/egodact/egodact.com\" target=\"_blank\">GitHub</a>",
   "footer.pages.title": "Pages",
   "footer.pages.navigation.home": "Home",

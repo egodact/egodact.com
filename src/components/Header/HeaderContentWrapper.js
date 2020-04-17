@@ -7,7 +7,11 @@ import { mediaQuery } from '../../styles';
 
 const StyledHeaderContentWrapper = styled(Container)({
   alignItems: 'center',
-  lineHeight: 0
+  lineHeight: 0,
+  [mediaQuery(540)]: {
+    flexDirection: 'column',
+    alignItems: 'flex-start'
+  }
 }, ({ isHomePage }) => ({
   width: isHomePage ? 'calc(100% - 320px)' : null,
   [mediaQuery(1200)]: {

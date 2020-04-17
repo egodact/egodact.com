@@ -2,11 +2,18 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'react-emotion';
 import { Link } from 'react-router-dom';
-import { mediaQuery } from '../../styles';
+import { mediaQuery } from '../../../styles';
+import SignInButton from './SignInButton';
 import { injectIntl, intlShape } from 'react-intl';
 
 const StyledNavigation = styled('nav')({
-  marginLeft: 'auto'
+  marginLeft: 'auto',
+  display: 'flex',
+  alignItems: 'center',
+  [mediaQuery(540)]: {
+    marginTop: 12,
+    width: '100%'
+  }
 });
 
 const StyledLink = styled(Link)({
@@ -18,6 +25,11 @@ const StyledLink = styled(Link)({
     marginRight: 24,
     ':first-child': {
       display: 'none'
+    }
+  },
+  [mediaQuery(540)]: {
+    ':last-child': {
+      marginRight: 'auto'
     }
   }
 });
@@ -39,11 +51,12 @@ const links = intl => [
 
 const Navigation = ({ intl }) => (
   <StyledNavigation>
-    {links(intl).map(link =>
+    {links(intl).map(link => (
       <StyledLink to={link.url} key={link.url}>
         {link.name}
       </StyledLink>
-    )}
+    ))}
+    <SignInButton />
   </StyledNavigation>
 );
 
